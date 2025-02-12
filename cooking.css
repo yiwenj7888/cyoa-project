@@ -1,45 +1,70 @@
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to center everything */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the main heading */
 h1 {
     text-align: center;
-    font-size: 80px;
-    text-decoration: underline;
-    color: #03CEA4;
-    margin: 20px;
+    color: #333;
 }
 
-div {
+/* Style for the paragraph with the question */
+p.question {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Styles for the choices section */
+.choices {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Style for each choice */
+.choice {
     display: inline-block;
-    padding: 30px;
-    margin: 45px;
-    margin-left: 170px;
+    width: 45%;
+    margin: 10px;
+    position: relative;
 }
 
-.center-meals {
-    text-align: center;
+/* Link inside each choice */
+.choice a {
+    text-decoration: none;
+    color: #000;
+    display: block;
 }
 
-img {
-    margin: 15px;
+/* Image size */
+.small-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
-#center {
-    text-align: center;
-    font-size: 50px;
-}
-
-body {
-    background: white;
-}
-
-h5 {
-    font-size: 40px;
-    text-align: center;
-    margin: 20px;
-    line-height: 70px;
-}
-
-h4 {
-    font-size: 50px;
-    text-align: center;
-    margin: 50px;
-    line-height: 70px;
+/* Style for text that sits on top of the image */
+.choice-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
